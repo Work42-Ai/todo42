@@ -78,14 +78,14 @@ If a plan exists, read its `generatedAt`, then list every session with activity
 since then — across ALL kinds:
 
 ```bash
-work42 sessions list --since "<lastPlan.generatedAt>" --json --project work42
+sessions_list(since: "<lastPlan.generatedAt>", project: "work42")
 ```
 
 For each returned session:
 
 - **event / routine sessions** → read its `summary` to understand what happened.
 - **task sessions** (type `task`) → read the session's `plan/subtasks`
-  (`work42 storage get --session <id> plan/subtasks`) to see remaining subtasks
+  (`storage_get`) to see remaining subtasks
   and its derived stage, and judge how much time finishing it still needs.
 
 **Prefer finishing in-flight work over starting new.** Carry forward the
@@ -95,7 +95,7 @@ is stored yet, plan from scratch.
 
 ### 1 — Gather what's on my plate (real data only)
 
-- **tasks** — `work42 sessions list --json` (task-type sessions). Consider
+- **tasks** — `sessions_list` (task-type sessions). Consider
   non-Done sessions that need MY hands today (In-Progress; startable Planning;
   Testing only if QA came back to me). A task in Human Review / waiting on
   others' review is BLOCKED ON OTHERS — no To-Do.
@@ -203,7 +203,7 @@ valid.
 - **Anchor on the last plan + actual activity.** Step 0 (`planned-day last` +
   `sessions list --since`) is mandatory — reflect on what happened, prefer
   finishing over starting.
-- **Only real data.** Tasks from `work42 sessions`; PRs/Jira per the prompt's sources;
+- **Only real data.** Tasks from `Work42 sessions`; PRs/Jira per the prompt's sources;
   events from `meet42`. Never invent a task, PR, or event.
 - **Pick + schedule existing To-Dos; don't duplicate.** Sessions auto-create
   task/review To-Dos — `todo42 todos list` first, schedule those; add only what

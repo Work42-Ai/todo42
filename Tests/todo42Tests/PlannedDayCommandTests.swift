@@ -1,4 +1,4 @@
-// PlannedDayCommandTests.swift — the `work42 planned-day` CLI. The schedule is
+// PlannedDayCommandTests.swift — the `todo42 planned-day` CLI. The schedule is
 // the generic To-Do collection now (see TodosCommandTests + TodoTests); this
 // covers the day-level briefing surface:
 //   - WORK42_SESSION_ID capture into a session-less artifact,
@@ -13,7 +13,7 @@ import Testing
 @testable import todo42
 @testable import Todo42Core
 
-@Suite("work42 planned-day CLI")
+@Suite("todo42 planned-day CLI")
 struct PlannedDayCommandTests {
 
     // MARK: helpers

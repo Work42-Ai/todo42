@@ -91,8 +91,8 @@ with the version you pass.
 
 ## Origin
 
-Extracted from [`work42`](https://github.com/Work42-Ai/work42) (`Flow42Core` To-Dos and planned-day store, the `work42 todos`
-and `work42 planned-day` commands, and the Home To-Dos and Overview widgets).
+Extracted from [`work42`](https://github.com/Work42-Ai/work42) (`Flow42Core` To-Dos and planned-day store, its todos and
+planned-day commands, and the Home To-Dos and Overview widgets).
 
 ## License
 

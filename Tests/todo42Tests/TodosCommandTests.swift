@@ -1,20 +1,20 @@
 // TodosCommandTests.swift — feat/planning-generic-block-events-instead-of-first.9/.26.
 //
-// CLI-layer unit tests for `work42 todos`: the pure `--slot` parser and the
+// CLI-layer unit tests for `todo42 todos`: the pure `--slot` parser and the
 // one-line list renderer. The store CRUD these commands drive is covered by
 // TodoTests (Flow42CoreTests); here we cover the CLI's own parsing/rendering.
 //
 // .26 additions: `line()` marks soft-archived rows with [archived]; default
-// listTodos excludes soft-archived To-Dos (mirrors what `work42 todos list`
+// listTodos excludes soft-archived To-Dos (mirrors what `todo42 todos list`
 // does without `--archived`); listTodos(includeArchived: true) includes them
-// with a non-null archivedAt (mirrors `work42 todos list --archived`).
+// with a non-null archivedAt (mirrors `todo42 todos list --archived`).
 
 import Foundation
 import Testing
 @testable import todo42
 @testable import Todo42Core
 
-@Suite("work42 todos CLI")
+@Suite("todo42 todos CLI")
 struct TodosCommandTests {
 
     // MARK: --slot parsing

@@ -532,7 +532,7 @@ public final class PlannedDayStore {
         guard let existingCreatedAt = try createdAt(todoId: todo.id) else {
             throw PlannedDay.ValidationError(
                 message: "no To-Do with id \"\(todo.id)\".",
-                suggestion: "List current To-Dos with `work42 todos list`."
+                suggestion: "List current To-Dos with `todo42 todos list`."
             )
         }
         try execBlock("BEGIN IMMEDIATE;", label: "begin")

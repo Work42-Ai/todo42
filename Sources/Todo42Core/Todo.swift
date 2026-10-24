@@ -24,7 +24,7 @@
 // url — nothing is stored for it.
 //
 // Completion is a stored `completedAt` on the whole To-Do, asserted explicitly
-// (user checkbox / `work42 todos complete <id>`) or by the session↔To-Do link
+// (user checkbox / `todo42 todos complete <id>`) or by the session↔To-Do link
 // (a completed task/review scratches its To-Do) — never inferred ad-hoc from a
 // linked task's status on read.
 //
@@ -33,7 +33,7 @@
 // resolve-on-read hook (`PlannedDayStore.listTodos` + `TodoSessionArchiveResolving`)
 // rather than eager delete. Soft-archived To-Dos are excluded from default list
 // results and purged after the workspace's auto-archive window. Hard-delete
-// (`work42 todos remove`) still exists for explicit removal.
+// (`todo42 todos remove`) still exists for explicit removal.
 //
 // This file owns the storage CONTRACT only — the Codable shape + schema
 // validation. The on-disk `todos` + `todo_slots` tables and the read/write API
@@ -135,7 +135,7 @@ public extension TodoDerivedKind {
 public nonisolated struct Todo: Codable, Equatable, Sendable {
 
     /// Stable, generated id — addressable across days (e.g. for
-    /// `work42 todos complete <id>`).
+    /// `todo42 todos complete <id>`).
     public var id: String
 
     /// The human label shown on the To-Do (non-empty).

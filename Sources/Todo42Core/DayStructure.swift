@@ -24,7 +24,7 @@
 // to `PlannedDay` as an OPTIONAL `dayStructure` (absent = the agent didn't
 // author one) and shares the same validation conventions
 // (`PlannedDay.ValidationError`). The on-disk store + CLI round-trip live in
-// `Flow42Core/PlannedDay/PlannedDayStore.swift` and the `work42 planned-day`
+// `Flow42Core/PlannedDay/PlannedDayStore.swift` and the `todo42 planned-day`
 // CLI — the CLI and app talk only via the store.
 
 import Foundation

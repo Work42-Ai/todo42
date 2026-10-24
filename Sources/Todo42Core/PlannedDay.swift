@@ -5,7 +5,7 @@
 // This file owns the storage CONTRACT only — the Codable shape and schema
 // validation. The on-disk store (a per-workspace SQLite `store.db`,
 // modeled on meet42's `MeetProjectStore`) lives in
-// `Flow42Core/PlannedDay/PlannedDayStore.swift`. The `work42 planned-day`
+// `Flow42Core/PlannedDay/PlannedDayStore.swift`. The `todo42 planned-day`
 // CLI and the app's Overview widget are built on top of these and never
 // reach around them (the hard repo rule: CLI and app talk only via the
 // store).
