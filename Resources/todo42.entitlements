@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  todo42.entitlements — signed into the release binary (scripts/release.sh). The release uses the Hardened
+  Runtime (notarization requires it). todo42 touches no protected resource (no calendar, microphone, camera
+  or network), so it asks for no exception: the dictionary is intentionally empty.
+-->
+<plist version="1.0">
+<dict>
+</dict>
+</plist>

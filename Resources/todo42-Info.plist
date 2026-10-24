@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  todo42-Info.plist — the Info.plist of todo42.app (scripts/build-todo42.sh), also embedded into the binary's
+  __TEXT,__info_plist section. todo42 ships as a small signed app bundle (no Dock icon, no window) for the
+  same reason meet42 does: a stable code-signing identity under the name "todo42". It reads and writes only
+  its own files under ~/.work42, so it needs no usage descriptions and no entitlements.
+-->
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.work42.todo42</string>
+    <key>CFBundleName</key>
+    <string>todo42</string>
+    <key>CFBundleDisplayName</key>
+    <string>todo42</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>LSMinimumSystemVersion</key>
+    <string>15.0</string>
+    <key>CFBundleExecutable</key>
+    <string>todo42</string>
+</dict>
+</plist>

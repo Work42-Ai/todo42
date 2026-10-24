@@ -1,0 +1,16 @@
+manifest_version: 2
+name: todo42
+version: 0.1.0
+description: >
+  Work42's To-Dos and Planned Day, extracted from the app into a first-party plugin
+  (WOR-382). Provides the To-Dos widget (the whole collection: add, tick, rename, date, link, delete) and the
+  My Planned Day widget (the day's summary, day-structure donut and scheduled To-Dos), a background agent that
+  archives To-Dos whose linked session has been archived and purges old archived ones, the `planned-day` skill
+  the daily-planning routine follows, and the `todo42-setup` skill. All data lives in the standalone todo42 tool
+  (github.com/Work42-Ai/todo42), which this plugin's skill installs from its signed releases; this plugin is
+  UI + orchestration.
+author: work42
+sdk_version: 2.8.0
+sdk_abi: 13
+requires: []
+global_skills: todo42-setup
