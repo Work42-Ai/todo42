@@ -10,7 +10,7 @@ description: >
   (github.com/Work42-Ai/todo42), which this plugin's skill installs from its signed releases; this plugin is
   UI + orchestration.
 author: work42
-sdk_version: 2.8.0
-sdk_abi: 13
+sdk_version: 2.13.0
+sdk_abi: 15
 requires: []
 global_skills: todo42-setup
